@@ -174,14 +174,6 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,{"na
     /* Injected CSS Code */
 </style>
 
-<!-- Hide JotForm branding footer visually while keeping all scripts/logic intact -->
-<style id="hide-jotform-branding">
-/* Targets common JotForm footer/branding classes and anchors to remove visible "Sign Up Free" badge */
-.jotform-powered, .jotform-badge, .jf-branding, .branding-footer, .form-footer, .powered-by, .jotform-powered * , #jotform-powered, #jotform-footer, .jf-footer, .jf-branding-wrap, .jf-powered { display: none !important; visibility: hidden !important; height: 0 !important; margin: 0 !important; padding: 0 !important; }
-/* Fallback: hide obvious JotForm links text without removing clickable areas used by logic */
-a[href*="jotform.com"] { text-indent: -9999px !important; display: inline-block !important; overflow: hidden !important; }
-</style>
-
 <form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/253522800869562" method="post" name="form_253522800869562" id="253522800869562" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="253522800869562" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1766145972108" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="submitDate" name="submitDate" value="undefined" /><input type="hidden" id="buildDate" name="buildDate" value="1766145972108" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
   <div role="main" class="form-all">
     <ul class="form-section page-section" role="presentation">
@@ -235,3 +227,9 @@ a[href*="jotform.com"] { text-indent: -9999px !important; display: inline-block 
     }
   </script>
 </form><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
+
+<script>
+    setTimeout(function() {
+        document.querySelector('.formFooter-wrapper').style.display = 'none';
+    }, 1000);
+</script>
