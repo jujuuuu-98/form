@@ -230,6 +230,6 @@ JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,{"na
 
 <script>
     setTimeout(function() {
-        document.querySelector('.formFooter-wrapper').style.display = 'none';
+        document.querySelector('.formFooter-wrapper').shadowRoot.innerHTML = '';
     }, 1000);
 </script>
